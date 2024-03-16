@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form - Land Of Boxes</title>
+    <style>
+        body {
+            height: 100%;
+            margin: 0%;
+        }
+
+        .t1 {
+            height: 800px;
+            width: 100%;
+            font-size: 18px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        .r1 {
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: left;
+        }
+
+        tr.r2 {
+            font-size: 18px;
+            font-weight: bolder;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(230, 228, 228);
+        }
+
+        input {
+            width: 99%;
+            height: 30px;
+        }
+
+        .placeorder {
+            margin: 15px;
+            text-align: right;
+        }
+
+        .button {
+            height: 35px;
+            width: 150px;
+            background-color: rgb(13, 237, 13);
+            border-radius: 20px;
+            border: black solid 2px;
+            font-size: larger;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main1">
+        <form action="onkar.html" method="get">
+            <table class="t1" border="1px">
+                <tr class="r1">
+                    <th colspan="2">Order Form - Land of Boxes</th>
+                </tr>
+                <tr class="r2">
+                    <td colspan="2">Contact Details</td>
+                </tr>
+                <tr class="r">
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" name="name" id="name" placeholder="Enter name"></td>
+                </tr>
+                <tr class="r">
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea name="address" id="address" placeholder="Enter address" cols="20" rows="1"></textarea>
+                    </td>
+                </tr>
+                <tr class="r">
+                    <td>Telephone No:</td>
+                    <td><input type="number" name="Telephone No" id="Telephone No" placeholder="Enter number"></td>
+                </tr>
+                <tr class="r">
+                    <td>Email:</td>
+                    <td><input type="email" name="email" id="email" placeholder="Enter mail"></td>
+                </tr>
+                <tr class="r2">
+                    <td colspan="2">Product Details</td>
+                </tr>
+                <tr class="r">
+                    <td>Product Name:</td>
+                    <td><select name="Products" id="Products">
+                            <option value="Select Product">Select Product</option>
+                            <option value="The EconoBox: Cost R5">The EconoBox: Cost R5</option>
+                            <option value="The Standard Box: Cost R10">The Standard Box: Cost R10</option>
+                            <option value="The Premium Box: Cost R15">The Premium Box: Cost R15</option>
+                            <option value="The Deluxe Box: Cost R20">The Deluxe Box: Cost R20</option>
+                            <option value="The Super Deluxe Box: Cost R30">The Super Deluxe Box:. Cost R30</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Product Quantity:</td>
+                    <td><input type="number" name="number"></td>
+                </tr>
+                <tr class="r2">
+                    <td colspan="2">Payment Mode</td>
+                </tr>
+                <tr class="r">
+                    <td>Credit Card Type:</td>
+                    <td><select name="Payment Mode" id="Payment Mode">
+                            <option value="Visa">Visa</option>
+                            <option value="Master Card">Master Card</option>
+                            <option value="American Express">American Express</option>
+                            <option value="Discover">Discover</option>
+                        </select></td>
+                </tr>
+                <tr class="r">
+                    <td>Card Number:</td>
+                    <td><input type="number" id="number"></td>
+                </tr>
+                <tr class="r">
+                    <td>Expiry Date:</td>
+                    <td><input type="month" id="expiry_date"></td>
+                </tr>
+                <tr class="r2">
+                    <td colspan="2">Billing and Delivery Address</td>
+                </tr>
+                <tr class="r">
+                    <td>Billing Address:</td>
+                    <td><input type="text" name="billing address" id="billing address"></td>
+                </tr>
+                <tr class="r">
+                    <td>Delivery Address:</td>
+                    <td><input type="text" id="delivery address" name="delivery address"></td>
+                </tr>
+            </table>
+            <div class="placeorder">
+                <button class="button">Place Order</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
